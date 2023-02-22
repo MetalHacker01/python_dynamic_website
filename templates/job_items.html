@@ -1,0 +1,18 @@
+<div class="card mb-4 box-shadow">
+          <div class="card-header">
+            {% if job['salary'] == null %}
+            <h4 class="my-0 font-weight-normal">To confirm</h4>
+            {% else %}
+            <h4 class="my-0 font-weight-normal">{{job['salary']}}</h4>
+            {% endif %}
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">{{job['title']}}</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li><b>Region:</b> {{job['region']}}</li>
+              <li><b>Seniority:</b> {{job['seniority']}}</li>
+              <li><b>Work Hrs:</b> {{job['working-hours']}}</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Apply for job</button>
+          </div>
+        </div>
