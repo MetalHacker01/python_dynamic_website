@@ -3,7 +3,7 @@
   <img src="{{job['img']}}" class="card-img-top" alt="Job Images">
   <div class="card-body">
     <h5 class="card-title">{{job['title']}}</h5>
-     {% if job['salary'] == null %}
+     {% if job['salary'] == "" %}
     <p class="card-text">The salary to be decided</p>
     {% else %}
     <p class="card-text">{{job['salary']}}</p>
@@ -12,7 +12,7 @@
   <ul class="list-group list-group-flush">
     <li class="list-group-item"><b>Region:</b> {{job['region']}}</li>
     <li class="list-group-item"><b>Seniority:</b> {{job['seniority']}}</li>
-    <li class="list-group-item"><b>Work Hrs:</b> {{job['working-hours']}}</li>
+    <li class="list-group-item"><b>Work Hrs:</b> {{job['working_hours']}}</li>
   </ul>
   <div class="card-body">
    <button type="button" class="btn btn-outline-info">Apply job</button>
