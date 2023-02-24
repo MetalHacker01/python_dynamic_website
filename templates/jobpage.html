@@ -24,8 +24,8 @@
     </div>
 <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="{{job.img}}" class="d-block mx-lg-auto img-fluid" style="height:300px;object-fit: cover" alt="Bootstrap Themes" width="700" height="300" loading="lazy">
+      <div class="col-12  col-lg-6">
+        <img src="{{job.img}}" class="d-block mx-lg-auto img-fluid" style="height:350px;object-fit: cover" alt="Bootstrap Themes" width="700" height="300" loading="lazy">
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">Become our new {{job.title}}</h1>   
@@ -44,7 +44,7 @@
 
         </div>
       </div>
-  <div class="row g-4 py-2 row-cols-1 row-cols-lg-3">
+  <div class="row-lg g-4 py-2 row-cols-1 row-cols-lg-3">
       <div class="feature col">
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
@@ -60,9 +60,8 @@
         <p>{{job.requirements}}</p>
       </div>
     </div>
-   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-          <button type="button" class="btn btn-outline-info">Apply job</button>
-          </div>
+   {% include 'application_form.html' %}
+   
     </div>
            
   </div>

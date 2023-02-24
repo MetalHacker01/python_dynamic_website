@@ -29,4 +29,9 @@ html {
   height: 200px !important;
   object-fit: cover;
 }
+
+.form-control{
+  height: calc(1.5em + 0.75rem + 7px);
+}
+
 </style>
